@@ -1,4 +1,4 @@
-This package contains most effects from EffecTV (http://effectc.sourceforge.net)
+This package contains most effects from EffecTV (http://effectv.sourceforge.net)
 ported to gmerlin. Missing Effects are mostly the ones, which do
 things, which cannot be done within a generic filter API.
 
