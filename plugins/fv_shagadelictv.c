@@ -217,7 +217,7 @@ static void set_parameter(void * data, const char * name,
   {
   bg_effectv_plugin_t * vp = data;
   shagadelictv_t * priv = vp->e->priv;
-  int changed = 0;
+  //  int changed = 0;
   if(!name)
     return;
 

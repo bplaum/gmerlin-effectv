@@ -230,12 +230,9 @@ static void horizontalPup(effect * e, RGB32 *src)
 static void rasterPup(effect * e, RGB32 *src)
   {
   int x, y;
-  unsigned int offset;
   RGB32 *dest;
   pup_t * priv = e->priv;
   int step = 2 + (int)(priv->strength * (e->video_height-2) + 0.5);;
-
-  offset = 0;
 
   dest = priv->buffer;
   for(y=0; y<e->video_height; y++)
@@ -308,7 +305,6 @@ static const bg_parameter_info_t * get_parameters(void * data)
 static void set_parameter(void * data, const char * name,
                           const gavl_value_t *val)
   {
-  int changed = 0;
   bg_effectv_plugin_t * vp = data;
   pup_t * priv = vp->e->priv;
   

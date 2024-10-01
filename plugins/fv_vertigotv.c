@@ -195,7 +195,6 @@ static void set_parameter(void * data, const char * name,
   {
   bg_effectv_plugin_t * vp = data;
   vertigotv_t * priv = vp->e->priv;
-  int changed = 0;
   if(!name)
     return;
   EFFECTV_SET_PARAM_FLOAT(zoomrate);
@@ -206,8 +205,6 @@ static void * create_vertigotv()
   {
   return bg_effectv_create(dizzyRegister, 0);
   }
-
-
 
 const bg_fv_plugin_t the_plugin = 
   {

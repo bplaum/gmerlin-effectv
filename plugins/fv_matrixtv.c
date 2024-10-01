@@ -291,11 +291,10 @@ static void setPattern(effect * e)
 static void drawChar(effect * e, RGB32 *dest, unsigned char c, unsigned char v)
   {
   matrix_t * priv = e->priv;
-  int x, y, i;
+  int x, y;
   unsigned int *p;
   unsigned char *f;
 
-  i = 0;
   if(v == 255) { // sticky characters
   v = 160;
   }
@@ -486,7 +485,6 @@ static const bg_parameter_info_t * get_parameters(void * data)
 static void set_parameter(void * data, const char * name,
                           const gavl_value_t *val)
   {
-  int changed;
   bg_effectv_plugin_t * vp = data;
   matrix_t * priv = vp->e->priv;
   

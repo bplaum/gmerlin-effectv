@@ -144,7 +144,6 @@ static const bg_parameter_info_t * get_parameters(void * data)
 static void set_parameter(void * data, const char * name,
                           const gavl_value_t *val)
   {
-  int changed;
   bg_effectv_plugin_t * vp = data;
   rndm_t * priv = vp->e->priv;
   

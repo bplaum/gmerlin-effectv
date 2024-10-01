@@ -1,15 +1,15 @@
-AC_INIT([gmerlin-effectv], [2.0.0])
+AC_INIT([gmerlin-effectv],[2.0.0])
 AC_CONFIG_SRCDIR([include/gmerlin_effectv.h])
 
 AM_INIT_AUTOMAKE
 
-AM_CONFIG_HEADER(include/config.h)
+AC_CONFIG_HEADERS(include/config.h)
 
 AC_DISABLE_STATIC
 
 CFLAGS_SAVE=$CFLAGS
 AC_LANG_SOURCE(C)
-AC_PROG_LIBTOOL
+LT_INIT
 CFLAGS=$CFLAGS_SAVE
 
 
